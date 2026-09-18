@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prime Sales and Services | Sales, Installation & Repair</title>
+<meta name="description" content="Prime Sales and Services - Water Purifier, Washing Machine, Refrigerator and AC sales, installation and repair services in Nayagaon, Mohali.">
+<style>
+:root{--red:#d71920;--dark:#101828;--muted:#667085;--light:#f7f8fa;--white:#fff;--green:#16a34a;--border:#e6e8ec}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Inter,Arial,sans-serif;color:var(--dark);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+.topbar{background:#101828;color:#fff;font-size:14px;padding:8px 0}
+.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+nav{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--border)}
+.navin{height:72px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-weight:900;font-size:21px;letter-spacing:-.5px}.logo span{color:var(--red)}
+.navlinks{display:flex;gap:26px;font-weight:700;font-size:14px}
+.navlinks a:hover{color:var(--red)}
+.navbtn{background:var(--red);color:#fff;padding:11px 17px;border-radius:9px;font-weight:800}
+.hero{background:linear-gradient(135deg,#fff 0%,#fff5f5 52%,#f5f8ff 100%);padding:78px 0 70px}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:50px;align-items:center}
+.badge{display:inline-block;background:#ffe8e9;color:#b31218;padding:7px 12px;border-radius:30px;font-size:13px;font-weight:800;margin-bottom:18px}
+h1{font-size:clamp(38px,5vw,64px);line-height:1.04;letter-spacing:-2.2px;margin-bottom:20px}
+h1 span{color:var(--red)}
+.hero p{font-size:18px;color:#475467;max-width:620px;margin-bottom:28px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 20px;border-radius:10px;font-weight:800;border:1px solid transparent}
+.btn.primary{background:var(--red);color:#fff}.btn.secondary{border-color:#d0d5dd;background:#fff}
+.hero-card{background:#111827;color:#fff;border-radius:24px;padding:34px;box-shadow:0 22px 55px #10182822}
+.hero-card .icon{font-size:50px;margin-bottom:18px}
+.hero-card h3{font-size:25px;margin-bottom:10px}.hero-card p{color:#cbd5e1;font-size:15px;margin-bottom:20px}
+.mini-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mini{border:1px solid #344054;border-radius:12px;padding:14px;background:#182230}.mini b{display:block;font-size:14px}.mini small{color:#98a2b3}
+section{padding:78px 0}
+.section-head{text-align:center;max-width:700px;margin:0 auto 38px}
+.section-head h2{font-size:36px;letter-spacing:-1px;margin-bottom:10px}.section-head p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{border:1px solid var(--border);border-radius:18px;padding:25px;background:#fff;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 12px 35px #10182812}
+.card .service-icon{font-size:35px;margin-bottom:14px}.card h3{font-size:19px;margin-bottom:7px}.card p{font-size:14px;color:var(--muted)}
+.light{background:var(--light)}
+.features{display:grid;grid-template-columns:1fr 1fr;gap:25px}
+.feature{display:flex;gap:16px;background:#fff;border:1px solid var(--border);padding:20px;border-radius:15px}
+.feature strong{display:block;margin-bottom:3px}.feature p{font-size:14px;color:var(--muted)}
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.review{border:1px solid var(--border);padding:24px;border-radius:17px}.stars{color:#f59e0b;letter-spacing:2px}.review p{margin:12px 0;color:#475467;font-size:15px}.review b{font-size:14px}
+.founders{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.founder{border:1px solid var(--border);border-radius:18px;padding:25px;display:flex;gap:20px;align-items:center;background:#fff}
+.avatar{width:88px;height:88px;border-radius:50%;background:#eef2f6;display:grid;place-items:center;font-size:35px;flex:none}
+.founder p{color:var(--muted);font-size:14px}
+.contact-wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:24px;align-items:stretch}.contact-box{background:linear-gradient(135deg,#101828,#182230);color:#fff;border-radius:24px;padding:38px;display:flex;flex-direction:column;justify-content:center;min-height:320px;box-shadow:0 18px 45px #10182818}.contact-box .eyebrow{display:inline-flex;align-items:center;gap:7px;color:#fda4a8;font-size:12px;font-weight:900;letter-spacing:1.2px;text-transform:uppercase;margin-bottom:12px}.contact-box h2{font-size:36px;line-height:1.12;letter-spacing:-1px}.contact-box p{color:#cbd5e1;margin:12px 0 22px;max-width:540px}.contact-actions{display:flex;gap:10px;flex-wrap:wrap}.whatsapp{background:var(--green);color:#fff}.white{background:#fff;color:#101828}.contact-details{background:#fff;border:1px solid var(--border);border-radius:24px;padding:28px}.contact-details h3{font-size:22px;margin-bottom:18px}.contact-item{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid #eef0f3}.contact-item:last-child{border-bottom:0}.contact-icon{width:42px;height:42px;border-radius:12px;background:#fff1f2;color:var(--red);display:grid;place-items:center;font-size:19px;flex:none}.contact-item strong{display:block;font-size:14px;margin-bottom:2px}.contact-item a,.contact-item span{font-size:14px;color:#475467}.contact-item a:hover{color:var(--red)}.contact-note{margin-top:18px;padding:12px 14px;border-radius:12px;background:#f7f8fa;color:#667085;font-size:13px}
+.booking{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+form{background:#fff;border:1px solid var(--border);padding:28px;border-radius:18px}
+label{font-weight:700;font-size:14px;display:block;margin:13px 0 6px}
+input,select,textarea{width:100%;padding:12px 13px;border:1px solid #d0d5dd;border-radius:9px;font:inherit}
+textarea{min-height:110px;resize:vertical}
+footer{background:#0b1220;color:#d0d5dd;padding:42px 0 25px}.footergrid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:30px}.footergrid h3{color:#fff;margin-bottom:10px}.footergrid p,.footergrid a{font-size:14px}.copyright{border-top:1px solid #273142;margin-top:28px;padding-top:18px;font-size:13px}
+@media(max-width:900px){.hero-grid,.booking,.features,.contact-wrap{grid-template-columns:1fr}.cards{grid-template-columns:1fr 1fr}.reviews{grid-template-columns:1fr}.founders{grid-template-columns:1fr}.navlinks{display:none}.contact-box{min-height:auto}.footergrid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.cards{grid-template-columns:1fr}.hero{padding-top:55px}.hero-card{padding:25px}section{padding:60px 0}h1{font-size:43px}.topbar .container{justify-content:center;text-align:center}}
+</style>
+
+<style>
+.booking-pro{display:grid;grid-template-columns:.9fr 1.1fr;gap:34px;align-items:stretch}
+.booking-intro,.booking-form-card{border:1px solid #e6e8ec;border-radius:24px;background:#fff;box-shadow:0 12px 35px rgba(15,23,42,.07)}
+.booking-intro{padding:34px;background:linear-gradient(145deg,#111827,#1f2937);color:#fff;position:relative;overflow:hidden}
+.booking-intro:after{content:"";position:absolute;width:180px;height:180px;border-radius:50%;right:-70px;top:-70px;background:rgba(255,255,255,.07)}
+.booking-kicker{font-size:12px;letter-spacing:1.5px;font-weight:800;opacity:.8;text-transform:uppercase}
+.booking-intro h2{font-size:38px;line-height:1.12;margin:12px 0}.booking-intro>p{color:#d1d5db;line-height:1.7}
+.booking-points{display:grid;gap:14px;margin-top:26px}.booking-point{display:flex;gap:13px;align-items:flex-start}.booking-point .bp-icon{width:38px;height:38px;border-radius:12px;background:rgba(255,255,255,.1);display:grid;place-items:center;flex:none}.booking-point strong{display:block;margin-bottom:3px}.booking-point span{font-size:13px;color:#d1d5db;line-height:1.45}
+.booking-form-card{padding:30px}.form-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:22px}.form-head h3{margin:0;font-size:24px}.form-head p{margin:6px 0 0;color:#6b7280;font-size:14px;line-height:1.5}.secure-badge{font-size:11px;font-weight:700;padding:8px 10px;border-radius:999px;background:#f3f4f6;white-space:nowrap}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.form-field.full{grid-column:1/-1}.booking-form-card label{display:block;font-size:13px;font-weight:700;color:#374151;margin-bottom:7px}.booking-form-card input,.booking-form-card select,.booking-form-card textarea{width:100%;box-sizing:border-box;border:1px solid #d9dde5;border-radius:12px;padding:12px 13px;background:#fafbfc;font:inherit;outline:none;transition:.2s}.booking-form-card input:focus,.booking-form-card select:focus,.booking-form-card textarea:focus{border-color:#111827;background:#fff;box-shadow:0 0 0 3px rgba(17,24,39,.07)}.booking-form-card textarea{min-height:112px;resize:vertical}.field-note{display:flex;justify-content:space-between;margin-top:6px;font-size:11px;color:#8a93a3}.booking-submit{margin-top:18px;display:flex;justify-content:space-between;gap:12px;align-items:center}.booking-submit .btn{min-height:48px}.booking-help{font-size:11px;color:#6b7280;line-height:1.4}.word-count{display:block!important;margin-top:6px!important;font-size:11px!important;color:#8a93a3!important}
+@media(max-width:820px){.booking-pro{grid-template-columns:1fr}.booking-intro h2{font-size:32px}}
+@media(max-width:560px){.form-grid{grid-template-columns:1fr}.form-field.full{grid-column:auto}.booking-form-card,.booking-intro{padding:24px}.form-head{display:block}.secure-badge{display:inline-block;margin-top:12px}.booking-submit{display:block}.booking-submit .btn{width:100%!important}.booking-help{margin-top:10px}}
+
+/* Professional Founders section */
+.founders-pro{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+.founder-pro{position:relative;display:flex;gap:22px;align-items:center;padding:28px;border:1px solid #e5e7eb;border-radius:24px;background:linear-gradient(145deg,#fff,#f8fafc);box-shadow:0 12px 30px rgba(15,23,42,.07);overflow:hidden;transition:.25s}
+.founder-pro:hover{transform:translateY(-5px);box-shadow:0 20px 45px rgba(15,23,42,.12)}
+.founder-pro:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:#111827}
+.founder-photo{width:104px;height:104px;border-radius:22px;overflow:hidden;flex:none;background:#eef2f6;box-shadow:0 8px 22px rgba(15,23,42,.12);border:4px solid #fff}
+.founder-photo img{width:100%;height:100%;object-fit:cover}
+.founder-role{display:inline-flex;align-items:center;gap:6px;font-size:11px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase;color:#667085;margin-bottom:7px}
+.founder-pro h3{margin:0 0 6px;font-size:23px;letter-spacing:-.4px}
+.founder-pro p{margin:5px 0;color:#667085;font-size:14px}
+.founder-phone{display:inline-flex;align-items:center;gap:7px;margin-top:10px;padding:8px 11px;border-radius:10px;background:#f1f5f9;color:#111827;text-decoration:none;font-weight:700;font-size:13px}
+.founder-phone:hover{background:#e2e8f0}
+.founder-mark{position:absolute;right:22px;top:18px;font-size:30px;opacity:.08}
+@media(max-width:700px){.founders-pro{grid-template-columns:1fr}.founder-pro{padding:22px}.founder-photo{width:88px;height:88px}.founder-pro h3{font-size:20px}}
+
+.findus-section{background:linear-gradient(180deg,#f7f8fa 0%,#eef2f7 100%)}
+.findus-kicker{display:inline-block;font-size:11px;letter-spacing:1.6px;font-weight:900;color:#d71920;margin-bottom:8px}
+.findus-pro{display:grid;grid-template-columns:1.35fr .65fr;gap:22px;align-items:stretch}
+.findus-map{position:relative;min-height:430px;border:1px solid #e1e5ea;border-radius:24px;overflow:hidden;background:#fff;box-shadow:0 16px 40px rgba(16,24,40,.08)}
+.findus-map iframe{display:block;width:100%;height:100%;min-height:430px;border:0}
+.map-label{position:absolute;z-index:2;left:18px;top:18px;display:flex;gap:10px;align-items:center;background:rgba(255,255,255,.96);border:1px solid #e5e7eb;border-radius:14px;padding:10px 13px;box-shadow:0 8px 24px rgba(16,24,40,.12)}
+.map-pin{width:34px;height:34px;border-radius:10px;background:#fff1f2;display:grid;place-items:center}.map-label strong{display:block;font-size:13px}.map-label small{display:block;color:#667085;font-size:11px;margin-top:1px}
+.findus-card{border:1px solid #e1e5ea;border-radius:24px;background:#fff;padding:28px;box-shadow:0 16px 40px rgba(16,24,40,.08);display:flex;flex-direction:column;justify-content:center}
+.findus-card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}.location-icon{width:48px;height:48px;border-radius:14px;background:#fff1f2;display:grid;place-items:center;font-size:22px}.open-badge{font-size:10px;font-weight:800;color:#15803d;background:#f0fdf4;border:1px solid #bbf7d0;padding:7px 9px;border-radius:999px}
+.findus-card h3{font-size:24px;letter-spacing:-.5px;margin-bottom:9px}.findus-address{font-size:14px;color:#475467;line-height:1.65}.findus-info{margin:22px 0;border-top:1px solid #eef0f3;border-bottom:1px solid #eef0f3}.findus-info>div{padding:13px 0}.findus-info>div+div{border-top:1px solid #eef0f3}.findus-info b{display:block;font-size:12px;margin-bottom:3px}.findus-info span{font-size:12px;color:#667085}.findus-actions{display:grid;grid-template-columns:1.25fr .75fr;gap:9px}.findus-actions .btn{padding:12px 10px;font-size:13px}.findus-note{margin-top:15px;font-size:11px;color:#8a93a3;line-height:1.5}
+@media(max-width:900px){.findus-pro{grid-template-columns:1fr}.findus-map,.findus-map iframe{min-height:360px}}
+@media(max-width:560px){.findus-map,.findus-map iframe{min-height:300px}.findus-card{padding:22px}.findus-actions{grid-template-columns:1fr 1fr}}
+</style>
+
+</head>
+<body>
+
+<div class="topbar">
+  <div class="container">
+    <span>Prime Sales and Services</span>
+    <span>📍 Nayagaon, Mohali &nbsp; | &nbsp; 📞 8559058675</span>
+  </div>
+</div>
+
+<nav>
+  <div class="container navin">
+    <a class="logo" href="#home">PRIME <span>SALES & SERVICES</span></a>
+    <div class="navlinks">
+      <a href="#home">Home</a><a href="#services">Services</a><a href="#about">Why Us</a><a href="#reviews">Reviews</a><a href="#founders">Founders</a><a href="#contact">Contact</a>
+    </div>
+    <a class="navbtn" href="#booking">Book a Service</a>
+  </div>
+</nav>
+<div style="background:#fff;border-bottom:1px solid #e6e8ec">
+  <div class="container" style="display:flex;gap:10px;padding:10px 0;overflow:auto;white-space:nowrap">
+    <a href="#home" class="btn primary" style="padding:8px 14px;font-size:13px">Home</a>
+    <a href="#services" class="btn secondary" style="padding:8px 14px;font-size:13px">Services</a>
+    <a href="#booking" class="btn secondary" style="padding:8px 14px;font-size:13px">Book Service</a>
+    <a href="#contact" class="btn secondary" style="padding:8px 14px;font-size:13px">Contact</a>
+  </div>
+</div>
+
+<header class="hero" id="home">
+  <div class="container hero-grid">
+    <div>
+      <div class="badge">INSTALLATION • REPAIR • SERVICE</div>
+      <h1>Reliable Service.<br><span>Prime Solution.</span></h1>
+      <p>Professional sales, installation and repair services for Water Purifiers, Washing Machines, Refrigerators and ACs.</p>
+      <div class="actions">
+        <a class="btn primary" href="#booking">Book a Service</a>
+        <a class="btn secondary" href="tel:+918559058675">📞 Call Now</a>
+        <a class="btn secondary" href="https://wa.me/918559058675?text=Hello%20Prime%20Sales%20and%20Services,%20I%20need%20a%20service." target="_blank">💬 WhatsApp</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="icon">🛠️</div>
+      <h3>Installation, Repair & Service</h3>
+      <p>One place for appliance sales, installation, maintenance and repair support.</p>
+      <div class="mini-grid">
+        <div class="mini"><b>💧 Water Purifier</b><small>Service & Installation</small></div>
+        <div class="mini"><b>🧺 Washing Machine</b><small>Repair & Maintenance</small></div>
+        <div class="mini"><b>❄️ Refrigerator</b><small>Repair & Service</small></div>
+        <div class="mini"><b>🌬️ AC</b><small>Service & Installation</small></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head"><h2>Installation, Repair & Service</h2><p>Professional installation, repair and service support for your home appliances.</p></div>
+    <div class="cards">
+      <div class="card"><div class="service-icon">💧</div><h3>Water Purifier Services</h3><p>RO/UV/UF purifier sales, installation, servicing, filter & membrane replacement, leakage and water-quality related repairs.</p></div>
+      <div class="card"><div class="service-icon">🧺</div><h3>Washing Machine Services</h3><p>Top-load and front-load washing machine installation, diagnosis, repair, drainage, spin, noise and other service issues.</p></div>
+      <div class="card"><div class="service-icon">❄️</div><h3>Refrigerator Services</h3><p>Refrigerator inspection, cooling-related service, installation, maintenance and repair support for common appliance issues.</p></div>
+      <div class="card"><div class="service-icon">🌬️</div><h3>AC Services</h3><p>AC installation, servicing, cleaning, maintenance and repair support for residential air-conditioning systems.</p></div>
+    </div>
+    <div style="display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:24px">
+      <div class="btn secondary">🔧 Installation</div>
+      <div class="btn secondary">🛠️ Repair</div>
+      <div class="btn secondary">⚙️ Service & Maintenance</div>
+    </div>
+    <div class="features" style="margin-top:18px">
+      <div class="feature"><div>🔧</div><div><strong>Repair & Maintenance</strong><p>Fault diagnosis, preventive maintenance and repair support for listed appliances.</p></div></div>
+      <div class="feature"><div>📦</div><div><strong>Installation & Setup</strong><p>Professional installation and basic setup assistance for eligible appliances.</p></div></div>
+      <div class="feature"><div>⚙️</div><div><strong>Spare Parts Support</strong><p>Assistance with identifying required spare parts and service-related components.</p></div></div>
+      <div class="feature"><div>🛒</div><div><strong>Sales Support</strong><p>Appliance sales assistance along with installation and after-sales service coordination.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="light" id="about">
+  <div class="container">
+    <div class="section-head"><h2>Why Choose Prime?</h2><p>Built around dependable service and clear customer communication.</p></div>
+    <div class="features">
+      <div class="feature"><div>✓</div><div><strong>Multi-Service Support</strong><p>Water purifier, washing machine, refrigerator and AC services in one place.</p></div></div>
+      <div class="feature"><div>✓</div><div><strong>Professional Approach</strong><p>Service requests are handled with clear communication and practical solutions.</p></div></div>
+      <div class="feature"><div>✓</div><div><strong>Installation Support</strong><p>Get assistance for appliance installation and setup.</p></div></div>
+      <div class="feature"><div>✓</div><div><strong>Easy Booking</strong><p>Call, WhatsApp or use the online service request form below.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="container">
+    <div class="section-head"><h2>Customer Reviews</h2><p>Replace these sample reviews with your verified Google reviews.</p></div>
+    <div class="reviews">
+      <div class="review"><div class="stars">★★★★★</div><p>“Good communication and helpful service. The issue was checked properly.”</p><b>— Customer Review</b></div>
+      <div class="review"><div class="stars">★★★★★</div><p>“Professional approach and quick response for appliance service.”</p><b>— Customer Review</b></div>
+      <div class="review"><div class="stars">★★★★★</div><p>“Easy to contact and service support was explained clearly.”</p><b>— Customer Review</b></div>
+    </div>
+  </div>
+</section>
+
+<section class="light" id="founders">
+  <div class="container">
+    <div class="section-head"><h2>Our Founders</h2><p>The people behind Prime Sales and Services.</p></div>
+    <div class="founders-pro">
+      <article class="founder-pro">
+        <div class="founder-mark">✦</div>
+        <div class="founder-photo"><img src="pawan-kumar-yadav.png" alt="Pawan Kumar Yadav"></div>
+        <div><div class="founder-role">✦ Founder &amp; Service Lead</div><h3>Pawan Kumar Yadav</h3><p>Customer service, installation &amp; repair support</p><a class="founder-phone" href="tel:+918559058675">📞 8559058675</a></div>
+      </article>
+      <article class="founder-pro">
+        <div class="founder-mark">✦</div>
+        <div class="founder-photo"><img src="kesh-kumar-yadav.png" alt="Kesh Kumar Yadav"></div>
+        <div><div class="founder-role">✦ Founder &amp; Service Lead</div><h3>Kesh Kumar Yadav</h3><p>Sales coordination &amp; service support</p><a class="founder-phone" href="tel:+919501298551">📞 9501298551</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="booking" style="background:#f7f8fa;">
+  <div class="container booking-pro">
+    <div class="booking-intro">
+      <div class="booking-kicker">Prime Care • Online Booking</div>
+      <h2>Book a Service</h2>
+      <p>Customer apni service details fill kare. Submit karne par booking notification email par jayegi aur WhatsApp request bhi ready hogi.</p>
+      <div class="booking-points">
+        <div class="booking-point"><div class="bp-icon">📝</div><div><strong>Easy Booking Form</strong><span>Name, mobile, service, date, time aur problem details fill karein.</span></div></div>
+        <div class="booking-point"><div class="bp-icon">📧</div><div><strong>Email Notification</strong><span>Booking details aapki registered service email par bheji jayengi.</span></div></div>
+        <div class="booking-point"><div class="bp-icon">💬</div><div><strong>WhatsApp Support</strong><span>Submit ke baad WhatsApp par booking details ready hongi.</span></div></div>
+      </div>
+    </div>
+    <div class="booking-form-card">
+      <div class="form-head"><div><h3>Customer Booking Form</h3><p>Service book karne ke liye neeche details fill karein.</p></div><div class="secure-badge">✓ Quick Booking</div></div>
+      <form id="serviceForm">
+        <div class="form-grid">
+          <div class="form-field"><label for="name">Full Name *</label><input id="name" name="Name" maxlength="20" autocomplete="name" placeholder="Enter your name" required oninput="this.value=this.value.slice(0,20)"><div class="field-note"><span>Maximum 20 characters</span><span id="nameCount">0/20</span></div></div>
+          <div class="form-field"><label for="phone">Mobile Number *</label><input id="phone" name="Mobile Number" type="tel" inputmode="numeric" maxlength="10" minlength="10" pattern="[0-9]{10}" autocomplete="tel" placeholder="10-digit mobile number" required oninput="this.value=this.value.replace(/\D/g,'').slice(0,10)"><div class="field-note"><span>10 digits required</span><span id="phoneCount">0/10</span></div></div>
+          <div class="form-field"><label for="service">Service Required *</label><select id="service" name="Service" required><option value="">Select service</option><option>Water Purifier</option><option>Washing Machine</option><option>Refrigerator</option><option>Microwave</option><option>AC</option><option>Other Appliance Service</option></select></div>
+          <div class="form-field"><label for="date">Preferred Date</label><input id="date" name="Preferred Date" type="date"></div>
+          <div class="form-field"><label for="time">Preferred Time</label><select id="time" name="Preferred Time"><option value="">Select time</option><option>9:00 AM - 11:00 AM</option><option>11:00 AM - 1:00 PM</option><option>1:00 PM - 3:00 PM</option><option>3:00 PM - 5:00 PM</option><option>5:00 PM - 7:00 PM</option></select></div>
+          <div class="form-field"><label for="address">Service Address</label><input id="address" name="Service Address" autocomplete="street-address" placeholder="Enter your service address"></div>
+          <div class="form-field full"><label for="message">Problem / Requirement</label><textarea id="message" name="Problem / Requirement" placeholder="Briefly describe the problem or service you need" maxlength="120" data-max-words="20"></textarea><small id="messageWordCount" class="word-count">0/20 words</small></div>
+        </div>
+        <div class="booking-submit"><button class="btn primary" style="border:0;cursor:pointer" type="submit">📅 Book Service Now</button><div class="booking-help">Booking notification: shanvienterprises010926@gmail.com</div></div>
+        <div id="bookingStatus" style="display:none;margin-top:14px;padding:12px;border-radius:12px;font-size:13px;background:#ecfdf3;color:#067647"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="section-head"><h2>Contact Prime Sales & Services</h2><p>Have a repair, installation or service requirement? Get in touch with our team directly.</p></div>
+    <div class="contact-wrap">
+      <div class="contact-box">
+        <div class="eyebrow">● Quick Assistance</div>
+        <h2>Let’s Get Your Appliance Working Right.</h2>
+        <p>Call us for service assistance or send your requirement on WhatsApp. For a detailed request, you can also use our service booking form.</p>
+        <div class="contact-actions">
+          <a class="btn white" href="tel:+918559058675">📞 Call 8559058675</a>
+          <a class="btn whatsapp" href="https://wa.me/918559058675?text=Hello%20Prime%20Sales%20and%20Services,%20I%20need%20a%20service." target="_blank">💬 WhatsApp Us</a>
+        </div>
+      </div>
+      <div class="contact-details">
+        <h3>Contact Details</h3>
+        <div class="contact-item"><div class="contact-icon">📞</div><div><strong>Phone</strong><a href="tel:+918559058675">8559058675</a><br><a href="tel:+919501298551">9501298551</a></div></div>
+        <div class="contact-item"><div class="contact-icon">💬</div><div><strong>WhatsApp</strong><a href="https://wa.me/918559058675?text=Hello%20Prime%20Sales%20and%20Services,%20I%20need%20a%20service." target="_blank">Start a conversation</a></div></div>
+        <div class="contact-item"><div class="contact-icon">📍</div><div><strong>Visit / Service Location</strong><span>Shop No 5, Kahlon Farm Road, Near Shishu Niketan School, Nayagaon - 160103</span></div></div>
+        <div class="contact-item"><div class="contact-icon">🛠️</div><div><strong>Services</strong><span>Installation • Repair • Service & Maintenance</span></div></div>
+        <div class="contact-note">For faster assistance, mention your appliance type and briefly describe the issue when contacting us.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="light findus-section" id="findus">
+  <div class="container">
+    <div class="section-head"><span class="findus-kicker">VISIT PRIME SALES & SERVICES</span><h2>Find Us</h2><p>Easy to reach in Nayagaon, Mohali. Visit us for service support, installation and repair assistance.</p></div>
+    <div class="findus-pro">
+      <div class="findus-map">
+        <div class="map-label"><span class="map-pin">📍</span><div><strong>Our Location</strong><small>Nayagaon, Mohali — 160103</small></div></div>
+        <iframe title="Prime Sales and Services location" src="https://www.google.com/maps?q=30.781610,76.792416&z=17&output=embed" loading="lazy"></iframe>
+      </div>
+      <div class="findus-card">
+        <div class="findus-card-top"><span class="location-icon">📍</span><span class="open-badge">● Service Available</span></div>
+        <h3>Prime Sales & Services</h3>
+        <p class="findus-address">Shop No 5, Kahlon Farm Road,<br>Near Shishu Niketan School,<br>Nayagaon - 160103</p>
+        <div class="findus-info">
+          <div><b>🛠️ Services</b><span>Installation • Repair • Maintenance</span></div>
+          <div><b>📞 Contact</b><span>8559058675 &nbsp;|&nbsp; 9501298551</span></div>
+        </div>
+        <div class="findus-actions">
+          <a class="btn primary" href="https://www.google.com/maps/dir/?api=1&destination=30.781610,76.792416" target="_blank">🧭 Get Directions</a>
+          <a class="btn secondary" href="tel:+918559058675">📞 Call Us</a>
+        </div>
+        <p class="findus-note">Need help before visiting? Call us and our team will guide you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footergrid">
+      <div><h3>PRIME SALES AND SERVICES</h3><p>Water Purifier, Washing Machine, Refrigerator, AC and all types of Services & Repair available.</p></div>
+      <div><h3>Quick Links</h3><p><a href="#services">Services</a></p><p><a href="#booking">Book a Service</a></p><p><a href="#contact">Contact</a></p></div>
+      <div><h3>Contact</h3><p>📞 8559058675</p><p>📞 9501298551</p><p>📍 Nayagaon - 160103</p></div>
+    </div>
+    <div class="copyright">© 2026 Prime Sales and Services. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+document.getElementById('name').addEventListener('input',function(){document.getElementById('nameCount').textContent=this.value.length+'/20';});
+document.getElementById('phone').addEventListener('input',function(){document.getElementById('phoneCount').textContent=this.value.length+'/10';});
+document.getElementById('date').min=new Date().toISOString().split('T')[0];
+document.getElementById('serviceForm').addEventListener('submit',async function(e){
+  e.preventDefault();
+  const form=this, status=document.getElementById('bookingStatus');
+  const name=document.getElementById('name').value.trim();
+  const phone=document.getElementById('phone').value.trim();
+  const service=document.getElementById('service').value;
+  const date=document.getElementById('date').value || 'Not specified';
+  const time=document.getElementById('time').value || 'Not specified';
+  const address=document.getElementById('address').value.trim() || 'Not specified';
+  const message=document.getElementById('message').value.trim() || 'Not specified';
+  if(!/^\d{10}$/.test(phone)){alert('Please enter a valid 10-digit mobile number.');document.getElementById('phone').focus();return;}
+  const waText=`Hello Prime Sales and Services,%0A%0A*New Service Booking*%0A%0AName: ${encodeURIComponent(name)}%0AMobile: ${encodeURIComponent(phone)}%0AService: ${encodeURIComponent(service)}%0APreferred Date: ${encodeURIComponent(date)}%0APreferred Time: ${encodeURIComponent(time)}%0AAddress: ${encodeURIComponent(address)}%0AProblem/Requirement: ${encodeURIComponent(message)}`;
+  // Open WhatsApp immediately on the user click so browsers do not block the new tab.
+  const waWindow=window.open('about:blank','_blank');
+  if(waWindow){ waWindow.document.write('<p style="font-family:Arial;padding:24px">Opening WhatsApp…</p>'); }
+  const btn=form.querySelector('button[type="submit"]'); const old=btn.textContent; btn.disabled=true; btn.textContent='Submitting...';
+  try{
+    const data=new FormData();
+    data.append('Name',name); data.append('Mobile Number',phone); data.append('Service',service); data.append('Preferred Date',date); data.append('Preferred Time',time); data.append('Service Address',address); data.append('Problem / Requirement',message);
+    data.append('_subject','New Book a Service Request - Prime Sales & Services'); data.append('_template','table'); data.append('_captcha','false');
+    const r=await fetch('https://formsubmit.co/ajax/shanvienterprises010926@gmail.com',{method:'POST',headers:{'Accept':'application/json'},body:data});
+    if(!r.ok) throw new Error('Email failed');
+    status.textContent='✓ Booking details submitted. Email notification request sent, and WhatsApp is opening with the complete booking details.'; status.style.display='block';
+    if(waWindow){ waWindow.location.href=`https://wa.me/918559058675?text=${waText}`; } else { window.location.href=`https://wa.me/918559058675?text=${waText}`; }
+    form.reset(); document.getElementById('nameCount').textContent='0/20'; document.getElementById('phoneCount').textContent='0/10';
+    document.getElementById('messageWordCount').textContent='0/20 words';
+  }catch(err){
+    status.textContent='WhatsApp booking details are opening now. Please tap Send in WhatsApp. Email notification may require one-time FormSubmit activation.'; status.style.display='block';
+    if(waWindow){ waWindow.location.href=`https://wa.me/918559058675?text=${waText}`; } else { window.location.href=`https://wa.me/918559058675?text=${waText}`; }
+  }finally{btn.disabled=false;btn.textContent=old;}
+});
+</script>
+<script>
+(function(){
+  const box=document.getElementById('message');
+  const count=document.getElementById('messageWordCount');
+  if(!box||!count)return;
+  function enforce(){
+    let words=box.value.trim().split(/\s+/).filter(Boolean);
+    if(words.length>20){ box.value=words.slice(0,20).join(' '); words=words.slice(0,20); }
+    count.textContent=words.length+'/20 words';
+  }
+  box.addEventListener('input',enforce); enforce();
+})();
+</script>
+</body>
+</html>
